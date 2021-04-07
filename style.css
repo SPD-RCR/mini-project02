@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(70, 66, 66);
+}
+
+div.all-box::selection {
+  background: red;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  color: rgb(157, 95, 214);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+}
+p {
+  color: white;
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+}
+
+.all-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  border: 1px white;
+  border-style: dashed;
+  position: relative;
+  padding: 5px;
+  height: 225px;
+  width: 200px;
+  margin: auto;
+  margin-top: 40px;
+  color: rgb(157, 95, 214);
+  transition: box-shadow 0.6s linear;
+  margin: 0.5em;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 0px 10px rgb(157, 95, 214);
+}
+
+.small-box {
+  position: absolute;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin: auto;
+  padding: 2px;
+  color: rgb(157, 95, 214);
+  font-size: 20px;
+  margin-top: -15px;
+  z-index: 9;
+  background-color: rgb(70, 66, 66);
+  width: 195px;
+}
+
+.box-text {
+  position: absolute;
+  top: 15px;
+}
+
+.code {
+  position: absolute;
+  background: rgb(255, 200, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 200, 255, 1) 0%,
+    rgba(201, 125, 213, 1) 50%,
+    rgba(128, 0, 157, 1) 100%
+  );
+  border-radius: 5px;
+  margin-top: 75px;
+  width: 195px;
+  height: 150px;
+  color: white;
+}
